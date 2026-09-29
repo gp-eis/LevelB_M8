@@ -1,4 +1,4 @@
-import { getContent, shuffle } from "./content.js?deploy=20260929-level-b-live-refresh-10";
+import { getContent, shuffle } from "./content.js?deploy=20260929-level-c-live-refresh-11";
 
 const params = new URLSearchParams(location.search);
 const level = ["a", "b", "c"].includes(params.get("level")) ? params.get("level") : "a";
