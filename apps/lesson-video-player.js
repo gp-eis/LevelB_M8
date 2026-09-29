@@ -8,7 +8,7 @@ function addStyles() {
   if (document.querySelector('link[data-gp-centered-video-style]')) return;
   const link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "/LevelB_M8/apps/lesson-video-player.css?v=20260929-2&deploy=20260929-level-b-performance-12";
+  link.href = "/LevelB_M8/apps/lesson-video-player.css?v=20260929-2&deploy=20260929-level-ac-reading-13";
   link.dataset.gpCenteredVideoStyle = "true";
   document.head.append(link);
 }

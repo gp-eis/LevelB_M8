@@ -1,4 +1,4 @@
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-level-b-performance-12";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-level-ac-reading-13";
 
 const app = document.querySelector("[data-word-app]");
 let voice = null;

@@ -1,6 +1,6 @@
-import './us-english-speech.js?v=20260928-1&deploy=20260929-level-b-performance-12';
-import './gp-sounds.js?v=20260911-1&deploy=20260929-level-b-performance-12';
-import '/LevelB_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-b-performance-12';
+import './us-english-speech.js?v=20260928-1&deploy=20260929-level-ac-reading-13';
+import './gp-sounds.js?v=20260911-1&deploy=20260929-level-ac-reading-13';
+import '/LevelB_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-ac-reading-13';
 
 class GpNavigation extends HTMLElement {
   connectedCallback() {
@@ -328,15 +328,15 @@ export function hideNextAction(button) {
 }
 
 if (/\/phonics(?:\/|\.html)/i.test(location.pathname)) {
-  import("/LevelB_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-level-b-performance-12");
+  import("/LevelB_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-level-ac-reading-13");
 }
 
 if (/\/level-a\/literacy\/tpr\.html$/i.test(location.pathname)) {
   const style = document.createElement("link");
   style.rel = "stylesheet";
-      style.href = "/LevelB_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-level-b-performance-12";
+      style.href = "/LevelB_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-level-ac-reading-13";
   document.head.append(style);
-      import("/LevelB_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-level-b-performance-12");
+      import("/LevelB_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-level-ac-reading-13");
 }
 
 if (/\/level-a\/literacy\//i.test(location.pathname) && !/(?:tpr|conversation|flashcards(?:-week-[1-4])?)\.html$/i.test(location.pathname)) {
@@ -367,4 +367,4 @@ if (/\/level-a\/literacy\//i.test(location.pathname) && !/(?:tpr|conversation|fl
   else addWeekSongLink();
 }
 
-import("/LevelB_M8/apps/lesson-video-player.js?v=20260929-2&deploy=20260929-level-b-performance-12");
+import("/LevelB_M8/apps/lesson-video-player.js?v=20260929-2&deploy=20260929-level-ac-reading-13");
