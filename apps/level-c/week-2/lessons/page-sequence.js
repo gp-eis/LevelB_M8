@@ -1,5 +1,5 @@
-import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20261001-level-b-toast-health-v9";
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20261001-level-b-toast-health-v9";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20261001-level-b-honey-toast-conversation-v10";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20261001-level-b-honey-toast-conversation-v10";
 
 const page = Number(document.body.dataset.page);
 const pages = [2, 3, 4, 5];

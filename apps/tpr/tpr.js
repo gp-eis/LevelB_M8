@@ -1,4 +1,4 @@
-import { clips } from './clips.js?deploy=20261001-level-b-toast-health-v9';
+import { clips } from './clips.js?deploy=20261001-level-b-honey-toast-conversation-v10';
 const params = new URLSearchParams(location.search);
 const level = /^[abc]$/.test(params.get('level')) ? params.get('level') : 'a';
 const week = /^[1-4]$/.test(params.get('week')) ? params.get('week') : '1';
@@ -18,9 +18,9 @@ nav.dataset.sectionHref = back.href;
 nav.dataset.previousHref = back.href;
 const style = document.createElement('link');
 style.rel = 'stylesheet';
-style.href = new URL('assets/navigation/gp-navigation.css?deploy=20261001-level-b-toast-health-v9', root).href;
+style.href = new URL('assets/navigation/gp-navigation.css?deploy=20261001-level-b-honey-toast-conversation-v10', root).href;
 document.head.append(style);
-await import(new URL('assets/navigation/gp-navigation.js?deploy=20261001-level-b-toast-health-v9', root).href);
+await import(new URL('assets/navigation/gp-navigation.js?deploy=20261001-level-b-honey-toast-conversation-v10', root).href);
 // The shared TPR route is outside each level's literacy directory, so give
 // its floating navigation an explicit return to the originating flashcards.
 nav.querySelector('.gp-navigation__previous')?.remove();
@@ -48,7 +48,7 @@ if (entries.length) {
     video.controls = true;
     video.playsInline = true;
     video.preload = 'metadata';
-    video.src = new URL(entry.src, new URL('./clips.js?deploy=20261001-level-b-toast-health-v9', import.meta.url)).href;
+    video.src = new URL(entry.src, new URL('./clips.js?deploy=20261001-level-b-honey-toast-conversation-v10', import.meta.url)).href;
     video.setAttribute('aria-label', `${entry.word} TPR action`);
     card.append(heading, video);
     container.append(card);
