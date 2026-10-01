@@ -32,7 +32,7 @@ function makePanel(level, week) {
   panel.hidden = true;
   panel.setAttribute('aria-label', 'TPR video flashcards');
   panel.innerHTML = '<div class="fc-tpr-stage"><button type="button" class="fc-tpr-arrow" data-tpr-prev aria-label="Previous TPR card" hidden>‹</button><div class="fc-tpr-card"><p class="fc-tpr-empty">Your TPR video flashcards are coming soon!</p></div><button type="button" class="fc-tpr-arrow" data-tpr-next aria-label="Next TPR card" hidden>›</button></div><p class="fc-tpr-counter" data-tpr-count></p><div class="fc-tpr-thumbs" aria-label="Choose a TPR video flashcard"></div>';
-  import('./tpr/clips.js?v=20261001-b-all-complete&deploy=20261001-level-a-tpr-navigation-v7').then(({ clips }) => {
+  import('./tpr/clips.js?v=20261001-b-toast-health&deploy=20261001-level-b-toast-health-v9').then(({ clips }) => {
     const supplied = clips[level][week] || [];
     // Keep the EES key-sentence page after all individual action cards.
     const entries = [...supplied.filter(entry => entry.kind !== 'key-sentence'), ...supplied.filter(entry => entry.kind === 'key-sentence')];
@@ -85,9 +85,9 @@ function makePanel(level, week) {
     const show = next => {
       index = (next + entries.length) % entries.length;
       video.pause();
-      video.src = new URL(entries[index].src, new URL('./tpr/clips.js?deploy=20261001-level-a-tpr-navigation-v7', import.meta.url)).href;
+      video.src = new URL(entries[index].src, new URL('./tpr/clips.js?deploy=20261001-level-b-toast-health-v9', import.meta.url)).href;
       video.setAttribute('aria-label', entries[index].word + ' TPR action');
-      if (entries[index].poster) video.poster = new URL(entries[index].poster, new URL('./tpr/clips.js?deploy=20261001-level-a-tpr-navigation-v7', import.meta.url)).href;
+      if (entries[index].poster) video.poster = new URL(entries[index].poster, new URL('./tpr/clips.js?deploy=20261001-level-b-toast-health-v9', import.meta.url)).href;
       else video.removeAttribute('poster');
       heading.textContent = entries[index].word;
       panel.querySelector('[data-tpr-count]').textContent = 'Card ' + (index + 1) + ' of ' + entries.length;
@@ -105,7 +105,7 @@ function makePanel(level, week) {
       button.textContent = entry.word;
       if (entry.poster) {
         const image = document.createElement('img');
-        image.src = new URL(entry.poster, new URL('./tpr/clips.js?deploy=20261001-level-a-tpr-navigation-v7', import.meta.url)).href;
+        image.src = new URL(entry.poster, new URL('./tpr/clips.js?deploy=20261001-level-b-toast-health-v9', import.meta.url)).href;
         image.alt = '';
         button.prepend(image);
       }
@@ -181,7 +181,7 @@ function initialize() {
   }
   const style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = new URL('./tpr/launcher.css?v=20261001-floating-return-v7&deploy=20261001-level-a-tpr-navigation-v7', import.meta.url).href;
+  style.href = new URL('./tpr/launcher.css?v=20261001-floating-return-v7&deploy=20261001-level-b-toast-health-v9', import.meta.url).href;
   document.head.append(style);
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once: true });

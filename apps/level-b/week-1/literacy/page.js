@@ -1,4 +1,4 @@
-import { revealNextAction, hideNextAction } from "../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20261001-level-a-tpr-navigation-v7";
+import { revealNextAction, hideNextAction } from "../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20261001-level-b-toast-health-v9";
 
 const page = Number(document.body.dataset.page);
 const configs = {
