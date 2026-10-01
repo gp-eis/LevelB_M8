@@ -1,4 +1,4 @@
-import { PAGE_02_MEDIA } from './page-02-media-manifest.js?v=20260903-1&deploy=20260929-level-ac-reading-13';
+import { PAGE_02_MEDIA } from './page-02-media-manifest.js?v=20260903-1&deploy=20261001-level-a-tpr-navigation-v7';
 
 const State = Object.freeze({
   WAITING_START: 'WAITING_START',
